@@ -1,0 +1,255 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    /* background-color: #ffffff; */
+}
+
+.main .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.main .nav img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.main .greed {
+    margin: 50px 0px;
+    font-size: 50px;
+    color: #565353;
+    font-weight: 500;
+    padding: 20px;
+
+}
+
+.main .greed span {
+    background: -webkit-linear-gradient();
+
+
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    /* padding: px; */
+}
+.main .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+
+}
+.main .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+}
+.main .card p{
+    color: #585858;
+    font-size: 17px;
+
+}
+.main .card:hover{
+    background-color: #dfe4ea;
+}
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+#chato {
+    width: 24px;
+    cursor: pointer;
+    margin-right: 10px; /* Add right margin for spacing */
+}
+
+
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #d4dce5;
+    padding: 10px 20px;
+    border-radius: 50px;
+  }
+
+  .searchbox input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+  }
+  .searchbox img {
+    width: 24px;
+    cursor: pointer;
+  }
+
+
+
+#atom{
+    display: none;
+}
+
+
+
+.searchbox div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.main .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+
+}
+.main .bottom-info a{
+    color: #000000;
+    font-weight: bold;
+}
+
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result::-webkit-scrollbar {
+    display: none;
+}
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.result img{
+    width: 40px;
+    border-radius: 50%;
+}
+.result-data {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+    background:linear-gradient(to right,#9ed7ff,#ffffff,#9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+.result-data p{
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px  0px;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .main-bottom input{
+        flex: none;
+        width: 150px;
+    }
+    .main-bottom img{
+        width: 28px;
+        margin-left: -17px;
+    }
+    .searchbox{
+        padding: 5px 10px;
+    }
+    .searchbox div{
+        gap: 5px;
+    }
+    /* #card2 {
+        display: none;
+    }
+    #card3 {
+        display: none;
+    }
+    #card4 {
+        display: none;
+    } */
+
+    .cards .card{
+        display: none;
+    }
+    .icons {
+        margin-right: 10px;
+    }
+    .main .greed{
+        font-size: 38px;
+    }
+    #mic{
+        display: none;
+
+    }
+    #gal{
+        display: none;
+    }
+    #atom{
+        display: flex;
+        width: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 65px;
+
+    }
+}
